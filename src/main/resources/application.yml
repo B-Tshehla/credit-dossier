@@ -13,3 +13,19 @@ spring:
         json:
           trusted:
             packages: '*'
+  mail:
+    host: localhost
+    port: 1025
+    username: password
+    password: password
+    properties:
+      mail:
+        smtp:
+          ssl:
+            trust: "*"
+          auth: true
+          starttls:
+            enable: true
+            connectiontimeout: 50000
+            timeout: 30000
+            writetimeout: 5000
